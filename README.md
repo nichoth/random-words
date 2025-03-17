@@ -10,11 +10,17 @@ The `seed` option can be used with the `generate` function for situations that r
 
 The `count` function can be used to calculate the total number of words in the word list that meet the specified minimum and maximum length criteria.
 
-Installation:
+## fork 
+This is a fork of [apostrophecms/random-words](https://github.com/apostrophecms/random-words)
 
-    npm install random-words
 
-Examples:
+## Installation
+
+```sh
+npm i -S @nichoth/random-words
+```
+
+## Examples
 
 ```js
 import { generate, count } from "random-words";
@@ -110,5 +116,4 @@ console.log(count({ maxLength: 7 }));
 
 console.log(count({ minLength: 5, maxLength: 7 }));
 //output: 1015
-
 ```

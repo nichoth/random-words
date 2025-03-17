@@ -1,16 +1,27 @@
 {
-  "name": "random-words",
+  "name": "@nichoth/random-words",
   "version": "2.0.1",
   "description": "Generate one or more common English words",
+  "type": "module",
   "main": "index.js",
   "types": "index.d.ts",
-  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./index.js"
+    }
+  },
   "scripts": {
     "test": "mocha tests/test.js"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:apostrophecms/random-words.git"
+  },
+  "dependencies": {
+    "seedrandom": "^3.0.5"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
   },
   "keywords": [
     "random",
@@ -22,11 +33,5 @@
     "text"
   ],
   "author": "Apostrophe Technologies",
-  "license": "MIT",
-  "dependencies": {
-    "seedrandom": "^3.0.5"
-  },
-  "devDependencies": {
-    "mocha": "^10.2.0"
-  }
+  "license": "MIT"
 }
